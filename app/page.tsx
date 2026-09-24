@@ -25,7 +25,7 @@ const projects = [
     description:
       "A growing collection of polished frontend builds focused on rhythm, responsive layout, and accessible interactions.",
     stack: ["React", "CSS", "Responsive UI"],
-    href: "https://www.frontendmentor.io/",
+    href: "https://www.frontendmentor.io/profile/Leskim?tab=solutions",
     action: "View challenge profile",
   },
   {
@@ -174,8 +174,8 @@ export default function Home() {
         <div className="social-links">
           <a href="https://www.linkedin.com/in/leskim/" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
           <a href="https://github.com/Leskim" target="_blank" rel="noreferrer">GitHub <Arrow /></a>
-          <a href="#instagram-placeholder" aria-label="Instagram placeholder">Instagram</a>
-          <a href="#facebook-placeholder" aria-label="Facebook placeholder">Facebook</a>
+          <a href="https://www.instagram.com/lesleykimutai/" target="_blank" aria-label="Instagram placeholder">Instagram <Arrow /> </a>
+          <a href="https://www.facebook.com/lesley.kimutai" target="_blank" aria-label="Facebook placeholder">Facebook <Arrow /> </a>
         </div>
         <a href="#top" className="back-top">Back to top ↑</a>
       </footer>

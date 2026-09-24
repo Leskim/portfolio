@@ -8,6 +8,7 @@
   --sage: #d4dfd2;
   --orange: #e8683c;
   --line: rgba(20, 33, 31, .16);
+  /* --font-size: 20px; */
 }
 
 * { box-sizing: border-box; }
@@ -53,14 +54,14 @@ h1 em, h2 em { font-family: "Playfair Display", serif; font-weight: 500; }
 .about { padding-bottom: 110px; }
 .about-content h2, .experience-heading h2, .work-heading h2 { margin: -8px 0 45px; font-size: clamp(2.7rem, 5vw, 4.7rem); font-weight: 500; letter-spacing: -.065em; line-height: 1; }
 .about-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 65px; max-width: 750px; }
-.about-columns p, .work-heading p { color: var(--muted); line-height: 1.7; font-size: .94rem; }
+.about-columns p, .work-heading p { color: var(--muted); line-height: 1.7; font-size: 1.04rem; }
 .experience { padding-bottom: 120px; background: var(--sage); width: 100%; max-width: none; padding-left: max(32px, calc((100% - 1180px) / 2)); padding-right: max(32px, calc((100% - 1180px) / 2)); }
 .experience-heading { display: flex; justify-content: space-between; }
 .date-range { color: var(--muted); font: .65rem "DM Mono", monospace; }
 .experience-card { display: grid; grid-template-columns: 54px 1fr; gap: 24px; max-width: 760px; padding: 34px 0 0; border-top: 1px solid var(--line); }
 .company-mark { display: grid; place-items: center; width: 47px; height: 47px; color: var(--cream); background: var(--ink); font: .72rem "DM Mono", monospace; }
 .experience-card h3 { margin: -4px 0 18px; font-size: 1.45rem; font-weight: 600; }
-.role-description { max-width: 650px; color: rgba(20,33,31,.75); font-size: .88rem; line-height: 1.65; }
+.role-description { max-width: 650px; color: rgba(20,33,31,.75); font-size: .98rem; line-height: 1.65; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 23px; }
 .tag-list span { padding: 7px 10px; border: 1px solid var(--line); color: var(--muted); font: .57rem "DM Mono", monospace; text-transform: uppercase; letter-spacing: .04em; }
 .skills { padding-bottom: 125px; }
@@ -81,7 +82,7 @@ h1 em, h2 em { font-family: "Playfair Display", serif; font-weight: 500; }
 .project-details .eyebrow { margin-bottom: 13px; }
 .project-details h3 { margin-bottom: 14px; font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 500; letter-spacing: -.06em; line-height: .98; }
 .project-details h3 span { display: inline; }
-.project-details > p { max-width: 610px; color: var(--muted); font-size: .88rem; line-height: 1.6; }
+.project-details > p { max-width: 610px; color: var(--muted); font-size: .98rem; line-height: 1.65; }
 .project-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 24px; }
 .project-footer .tag-list { margin: 0; }
 .project-footer a { font: .64rem "DM Mono", monospace; text-transform: uppercase; }
@@ -126,4 +127,49 @@ h1 em, h2 em { font-family: "Playfair Display", serif; font-weight: 500; }
   .contact { padding-left: 20px; padding-right: 20px; }
   .site-footer { display: block; line-height: 2; }
   .social-links { gap: 15px; flex-wrap: wrap; margin: 18px 0; }
+}
+
+@media (min-width: 701px) {
+  .ticker {
+    font-size: 1rem;
+  }
+
+  .nav-links,
+  .header-resume,
+  .text-link,
+  .project-footer a {
+    font-size: 1rem;
+  }
+
+  .eyebrow,
+  .section-label,
+  .skill-label,
+  .project-number,
+  .date-range,
+  .contact-email {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 19px 25px;
+    font-size: .92rem;
+  }
+
+  .hero-intro {
+    font-size: 1.08rem;
+  }
+
+  .hero-note span,
+  .tag-list span,
+  .site-footer {
+    font-size: 1rem;
+  }
+
+  .hero-note strong {
+    font-size: 1rem;
+  }
+
+  .skill-item p {
+    font-size: 1.2rem;
+  }
 }
